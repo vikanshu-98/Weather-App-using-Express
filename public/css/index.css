@@ -1,0 +1,267 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@200;300;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Piazzolla', serif;
+}
+
+
+:root{
+    --main-bg:#1e272e;
+    --main-color:#0097e6;
+}
+.main_menu_right .carousel-item img{
+   /* // width: 90%; */
+ width:80%; 
+ align-items: center;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.main-header{
+    background-color: var(--main-bg);
+}
+.navbar{
+    color: #fff;
+    background-color: var(--main-bg);
+    padding: 2rem 0;
+}
+.navbar a{
+    color: #fff;
+    font-size: 1.4rem;
+}
+.navbar a:hover{
+    color: var(--main-color);
+}
+.navbar-toggler{
+    background-color: grey !important;
+}
+.navbar-toggler-icon{
+    color: #fff;
+}
+.navbar-brand{
+    font-size: 1.8rem !important;
+}
+.navbar li{
+    margin-left: 2rem;
+}
+
+.fa-snowflake{
+   transition: all linear;
+   animation: rot 2s linear infinite alternate;
+   color: var(--main-color);
+}
+
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.main_menu_left{
+ height: 70rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: flex-start;
+}
+.main_menu_right{
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main_menu_left p{
+    font-size: 2rem;
+}
+
+.main_menu_left h1{
+    font-size: 4em;
+    margin: 1rem 0 4rem 0;
+    text-transform: capitalize;
+}
+.main_menu_left .text-clr{
+    color: var(--main-color);
+}
+.main_menu_left button{
+
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px #000;
+    border-radius: 2rem;
+    outline: none;
+}
+.main_menu_left button:hover{
+    box-shadow: 0 8px 6px -6px  var(--main-color);
+}
+
+.footer{
+    background-color: var(--main-bg);
+    color:#fff;
+    margin-top: auto;
+}
+.footer h1{
+    text-align: center;
+    line-height: 4rem;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.temp_form{
+    position: relative;
+    width: 60%;
+    margin: 10rem auto 6rem;
+    border: none;
+    /* box-shadow: 0 2px 6px 2px #000; */
+}
+
+.temp_form input[type="text"]{
+    
+    width: 100%;
+    padding: 2rem 5rem 2rem 2rem;
+    background-color: #637583;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    box-shadow: 0 2px 6px 2px #637583;
+}
+
+::placeholder{
+    color: #bfc1c8;
+}
+
+.temp_form input[type="submit"]{
+    position: absolute;
+    top: 1rem;
+    right: 6px;
+    padding: 1rem 3rem;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    box-shadow: 0 8px 6px -6px #000;
+}
+.temp_form input[type="submit"]:hover{
+    box-shadow: 0 8px 6px -6px var(--main-color);
+}
+
+.temp_form input[type="submit"]:active{
+background-color: var(--main-color);
+}
+
+.tempInformation{
+    margin: auto;
+    width: 40rem;
+    height: 25rem;
+    background-color:#637583;
+    color: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 2px 6px 2px #637583;
+}
+
+.top_layer{
+    display: flex;
+    justify-content: space-between;
+    height: 20%;
+    width: 100%;
+    align-items: center;
+}
+.top_layer p{
+    font-weight: 600;
+    color: #fff;
+    font-size: 2rem;
+}
+.main_layer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+}
+.main_layer #city_name{
+    padding: 2rem 0 1rem 0;
+    color: #bfc1c8;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.middle_layer{
+    display: flex;
+    justify-content: space-around;
+}
+.middle_layer p,.middle_layer .fa{
+    font-size: 7rem;
+    font-weight: 900; 
+}
+
+.data_hide{
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+
+.img_icons{
+    animation: scale 2s linear infinite alternate;
+}
+
+@keyframes scale{
+    from{
+      transform: scale(0.8);
+    }
+    to{
+        transform: scale(1.6);
+    }
+}
+
+
+/* 404 error */
+.errr-img{
+    width: 50rem;
+    height: 30rem;
+}
+
+/* responsiveness */
+
+
+@media(max-width:768px){
+    .temp_form{
+        width: auto;
+    }
+    .tempInformation{
+        width: auto;
+    }
+
+    .main_menu_left{
+        height: auto;
+        margin: 5rem 0;
+    }
+    .main_menu_right{
+        height: auto;
+        
+    }
+    .main_menu_right .carousel-item img{
+        width: 100%;
+    }
+}
