@@ -4,7 +4,8 @@
   "description": "This App gives us the weahter info",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node cd src/index.js"
   },
   "author": "Vikanshu",
   "license": "ISC",
