@@ -264,4 +264,9 @@ background-color: var(--main-color);
     .main_menu_right .carousel-item img{
         width: 100%;
     }
+
+    #temp{
+        font-size: 5rem;
+        margin: auto 0;
+    }
 }
