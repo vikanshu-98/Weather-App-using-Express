@@ -33,6 +33,7 @@ html{
 .navbar a{
     color: #fff;
     font-size: 1.4rem;
+    
 }
 .navbar a:hover{
     color: var(--main-color);
